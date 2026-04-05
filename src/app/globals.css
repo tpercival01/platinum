@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  /* Pitch black */
+  --foreground: #ededed;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  /* Adds a very subtle red gradient to the very top of the screen */
+  background-image: radial-gradient(circle at top, #1a0000 0%, transparent 25%);
+  background-attachment: fixed;
+}
+
+/* Custom pulse animation for our loader */
+@keyframes sith-pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 15px #8b0000;
+  }
+
+  50% {
+    opacity: .7;
+    transform: scale(0.95);
+    box-shadow: 0 0 5px #4a0000;
+  }
+}
+
+.animate-sith-pulse {
+  animation: sith-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
