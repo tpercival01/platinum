@@ -5,7 +5,7 @@ export default function HomePage() {
     <main className="flex min-h-screen flex-col items-center justify-center p-8">
       <div className="w-full max-w-md rounded-2xl border border-neutral-800 bg-[#0a0a0a] p-8 shadow-2xl shadow-red-900/10">
         <h1 className="mb-8 text-center text-3xl font-bold tracking-widest text-neutral-200">
-          XBOX <span className="text-red-700">TRACKER</span>
+          PROJECT <span className="text-red-700">ONYX</span>
         </h1>
         
         <form action={submitGamertag} className="flex flex-col space-y-4">
