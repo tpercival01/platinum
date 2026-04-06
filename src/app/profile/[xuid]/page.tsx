@@ -42,7 +42,7 @@ export default async function ProfilePage({
             <div className="group relative flex h-full flex-col overflow-hidden rounded-xl bg-[#0a0a0a] border border-neutral-800 p-4 transition-all duration-300 hover:border-red-700 hover:shadow-[0_0_20px_rgba(139,0,0,0.3)] cursor-pointer">
               
               {/* Platinum check based on Gamerscore! */}
-              {game.currentGamerscore === game.totalGamerscore && game.totalGamerscore > 0 && (
+              {(game.currentGamerscore ?? 0) === (game.totalGamerscore ?? 0) && (game.totalGamerscore ?? 0) > 0 && (
                 <div className="absolute top-6 right-6 z-10 rounded bg-black/80 px-2 py-1 text-xs tracking-widest text-red-500 border border-red-900 shadow-[0_0_10px_#8b0000]">
                   100%
                 </div>
@@ -65,7 +65,7 @@ export default async function ProfilePage({
               <p className="text-sm text-neutral-500 mt-4 border-t border-neutral-900 pt-2 flex items-center justify-between pointer-events-none">
                 <span>PROGRESS</span>
                 <span className="font-mono">
-                  <span className="text-red-700">{game.currentGamerscore}</span> / {game.totalGamerscore} G
+                  <span className="text-red-700">{game.currentGamerscore ?? 0}</span> / {game.totalGamerscore ?? 0} G
                 </span>
               </p>
 
