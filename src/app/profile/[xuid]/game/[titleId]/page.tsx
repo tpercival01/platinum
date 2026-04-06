@@ -4,7 +4,6 @@ import { eq, and } from 'drizzle-orm';
 import { CollapsibleSection } from '@/components/CollapsibleSection';
 import { SyncLoader } from '@/components/SyncLoader';
 import { AchievementCard } from '@/components/AchievementCard';
-import { ForceSyncButton } from '@/components/ForceSyncButton';
 
 export const dynamic = 'force-dynamic';
 
@@ -56,7 +55,6 @@ export default async function GamePage({
             ACHIEVEMENT LOGS
           </p>
         </div>
-        <ForceSyncButton xuid={xuid} titleId={titleId} />
       </div>
       
       <CollapsibleSection 
