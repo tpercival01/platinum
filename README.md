@@ -1,5 +1,9 @@
 # Project Onyx - Xbox Achievement Tracker (Frontend)
 
+Live site: https://onyx.thomaspercival.dev/
+
+Frontend Repo: https://github.com/tpercival01/Project-Onyx-API
+
 Onyx is a sleek, dark-themed web application that brings the PlayStation "Platinum Trophy" experience to Xbox Live. It allows users to search their Gamertag, view their entire game library, and earn Bronze, Silver, Gold, and "Onyx" (100% completion) coins based on their achievement progress.
 
 This repository contains the **Frontend** presentation layer. It operates on a read-heavy, cache-first architecture, querying a Neon Serverless PostgreSQL database to render the UI instantly, while offloading external API communication to a decoupled Python microservice.
