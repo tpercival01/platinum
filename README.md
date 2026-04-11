@@ -2,7 +2,7 @@
 
 Live site: https://onyx.thomaspercival.dev/
 
-Frontend Repo: https://github.com/tpercival01/Project-Onyx-API
+Backend Repo: https://github.com/tpercival01/Project-Onyx-API
 
 Onyx is a sleek, dark-themed web application that brings the PlayStation "Platinum Trophy" experience to Xbox Live. It allows users to search their Gamertag, view their entire game library, and earn Bronze, Silver, Gold, and "Onyx" (100% completion) coins based on their achievement progress.
 
