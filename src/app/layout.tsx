@@ -13,8 +13,33 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "PROJECT ONYX",
-  description: "",
+  metadataBase: new URL("https://onyx.thomaspercival.dev"),
+  title: "Onyx - Xbox Achievement Tracker",
+  description:
+    "Track your Xbox achievements in style. Earn coins based on your completion progress and compete for the ultimate Onyx status.",
+  openGraph: {
+    title: "Onyx - Xbox Achievement Tracker",
+    description:
+      "Track your Xbox achievements in style. Earn coins based on your completion progress and compete for the ultimate Onyx status.",
+    url: "https://onyx.thomaspercival.dev",
+    siteName: "Onyx",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Onyx - Xbox Achievement Tracker",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Onyx - Xbox Achievement Tracker",
+    description:
+      "Track your Xbox achievements in style. Earn coins based on your completion progress and compete for the ultimate Onyx status.",
+    images: ["/opengraph-image.png"],
+  },
 };
 
 export default function RootLayout({
